@@ -14,7 +14,7 @@ joplin.plugins.register({
 				
 				let evalResult
 				try {
-				 evalResult = eval(selectedText)
+				 evalResult = await eval(selectedText)
 				}catch(err){
 					evalResult = JSON.stringify(serializeError(err))
 				}
